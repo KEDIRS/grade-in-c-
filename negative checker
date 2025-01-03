@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Accept two numbers from the user
+        Console.Write("Enter the first number: ");
+        int number1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter the second number: ");
+        int number2 = Convert.ToInt32(Console.ReadLine());
+
+        // Check the negativity of the numbers
+        if (number1 < 0 && number2 < 0)
+        {
+            Console.WriteLine("Both numbers are negative.");
+        }
+        else if (number1 < 0 || number2 < 0)
+        {
+            Console.WriteLine("Only one number is negative.");
+        }
+        else
+        {
+            Console.WriteLine("None of the numbers are negative.");
+        }
+
+        // Wait for user input before exiting
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
+    }
+}
